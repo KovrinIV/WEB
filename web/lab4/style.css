@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.planner {
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.header label {
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.header input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em;
+}
+
+.feedback label {
+    display: inline;
+    margin-right: 5px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    height: calc(100% - 120px); /* Подстраивается под высоту экрана */
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.goals h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.goals ul, .everything-else, .next-week {
+    list-style: none;
+    padding-left: 0;
+}
+
+.goals li, .everything-else li, .next-week li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.goals input[type="text"], .everything-else input[type="text"], .next-week input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    flex: 1;
+    padding: 4px;
+    font-size: 1em;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.day {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.day h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day textarea {
+    width: 100%;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    padding: 8px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .days {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .days {
+        grid-template-columns: 1fr;
+    }
+}

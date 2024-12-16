@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff; /* Ніжний блакитний фон */
+    color: #2c3e50; /* Темно-сірий текст */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2; /* Холодний насичений синій */
+    color: #ecf0f1; /* Світло-сірий текст */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Білий текст */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5dade2; /* Світлий холодний синій */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9; /* Насичений синій при наведенні */
+    color: #ecf0f1; /* Світлий текст */
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 10px 0;
+    background-color: #b3cde0; /* Ніжний блакитний для елементів списку */
+    color: #34495e; /* Темно-синій текст */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #5dade2; /* Яскравіший синій */
+    transform: translateY(-3px);
+}
+
+a {
+    color: #2980b9; /* Насичений синій для посилань */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1f618d; /* Темний холодний синій */
+}

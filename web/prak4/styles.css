@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e8eaf6; /* Легкий ніжно-фіолетовий для фону */
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(22, 50px); /* Adjust as necessary */
+    gap: 5px;
+    padding: 20px;
+    background-color: #bbdefb; /* Ніжний блакитний */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f3e5f5; /* Ніжно-фіолетовий */
+    border: 1px solid #b0bec5; /* М'який сірий для меж */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    text-align: center;
+    user-select: none;
+}
+
+.key.function {
+    background-color: #e3f2fd; /* Світло-блакитний */
+}
+
+.key:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: #d1c4e9; /* Трохи насиченіший фіолетовий при наведенні */
+}
+
+.key:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.key.esc { background-color: #ce93d8; /* Ніжний рожевий */ }
+.key.space { grid-column: span 6; }
+.key.backspace { grid-column: span 2; }
+.key.tab { grid-column: span 2; }
+.key.enter { grid-column: span 2; }
+.key.shift { grid-column: span 2; }
+
+/* Specific area for numpad */
+.key.numpad { background-color: #ede7f6; }
+.key.number.plus {
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-column-start: 22;
+    height: 105px;
+}

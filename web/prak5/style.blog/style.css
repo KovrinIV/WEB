@@ -1,0 +1,121 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #444;
+    background-color: #f8f9fa;
+    line-height: 1.7;
+}
+
+/* Заголовок */
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    margin-left: 15px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 3px;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3;
+}
+
+/* Секція блогу */
+.blog {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.blog h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #222;
+    text-align: center;
+}
+
+.blog-item {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-item h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.blog-item .date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.blog-item p {
+    margin: 12px 0;
+    color: #555;
+    line-height: 1.8;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Футер */
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 2px solid #dcdcdc;
+    color: #888;
+    margin-top: 40px;
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 40px; /* Зменшує ширину іконок */
+    height: 40px; /* Зменшує висоту іконок */
+    margin: 0 10px; /* Додає простір між іконками */
+    transition: transform 0.3s ease; /* Додає ефект при наведенні */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Легке збільшення при наведенні */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Центрує іконки */
+    align-items: center;
+    margin-top: 20px; /* Відступ зверху */
+}
